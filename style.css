@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000;
+  color: #a3a3a3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  margin: 0.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.container {
+  padding: 1rem;
+}
+.player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.image-container img {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+/* Progress */
+
+.progress-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  height: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.progress {
+  background: #a3a3a3;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 66%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+/* controls */
+
+.player-controls {
+  margin-top: 2.5rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fas {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(50%);
+}
+
+@media screen and (min-width: 1024px) {
+  /* .container {
+    display: grid;
+    place-self: center;
+    grid-template-columns: 500px;
+  } */
+
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .progress-container {
+    width: 60%;
+  }
+
+  .player-controls {
+    margin-top: 4rem;
+    width: 20rem;
+  }
+
+  .fas {
+    font-size: 3rem;
+  }
+}
