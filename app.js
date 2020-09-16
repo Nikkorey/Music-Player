@@ -33,5 +33,3 @@ playBtn.addEventListener("click", () => (isPlaying ? pauseSong() : playSong()));
 nextBtn.addEventListener("click", () => {
   console.log("hello");
 });
-
-console.log(songs);
